@@ -1,6 +1,10 @@
-cat /etc/os-release > stats.txt
+date > stats.txt
+cat /etc/os-release >> stats.txt
+uname -r >> stats.txt
+echo "" >> stats.txt
+hostname >> stats.txt
 pwd >> stats.txt
-who >> stats.txt
+whoami >> stats.txt
 echo "" >> stats.txt
 echo "Required Programs" >> stats.txt
 git --version >> stats.txt
