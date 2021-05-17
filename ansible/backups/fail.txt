@@ -1,0 +1,13 @@
+
+PLAY [Show Me the Money] ********************************************************************************************************************************
+
+TASK [Show Configuration Data] **************************************************************************************************************************
+fatal: [R1]: FAILED! => changed=false 
+  msg: 'paramiko is not installed: No module named ''paramiko'''
+fatal: [R2]: FAILED! => changed=false 
+  msg: 'paramiko is not installed: No module named ''paramiko'''
+
+PLAY RECAP **********************************************************************************************************************************************
+R1                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+R2                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+

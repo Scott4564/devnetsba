@@ -1,0 +1,41 @@
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+/home/cisco/devnetsba
+cisco    :0           2021-05-17 11:42 (:0)
+
+Required Programs
+git version 2.25.1
+
+Docker version 20.10.6, build 370c289
+
+ansible 2.9.6
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/cisco/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  executable location = /usr/bin/ansible
+  python version = 3.8.5 (default, Jan 27 2021, 15:41:15) [GCC 9.3.0]
+
+VS Code
+1.56.2
+054a9295330880ed74ceaedda236253b4f39a335
+x64
+CoenraadS.bracket-pair-colorizer-2
+esbenp.prettier-vscode
+Meezilla.json
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+oderwat.indent-rainbow
+redhat.vscode-yaml
+usernamehw.errorlens
+ZainChen.json
