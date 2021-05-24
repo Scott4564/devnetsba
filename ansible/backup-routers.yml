@@ -1,0 +1,20 @@
+---
+- name: "Backup Routers"
+  hosts: routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+    - name: Get running-config
+      ios_command:
+        commands: 
+          - show run
+          - show protocols
+          - show ip int brief 
+      register: show_output
+
+    - name: Save output to backups folder
+      copy:
+        content: "{{show_output.stdout | to_nice_yaml }}"
+        dest: "backups/{{inventory_hostname}}-config.txt"
+...

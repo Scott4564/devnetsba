@@ -1,0 +1,194 @@
+- |-
+    Building configuration...
+
+    Current configuration : 3920 bytes
+    !
+    ! Last configuration change at 13:55:56 UTC Sun May 23 2021
+    !
+    version 16.9
+    service timestamps debug datetime msec
+    service timestamps log datetime msec
+    platform qfp utilization monitor load 80
+    no platform punt-keepalive disable-kernel-core
+    platform console virtual
+    !
+    hostname R2
+    !
+    boot-start-marker
+    boot-end-marker
+    !
+    !
+    !
+    no aaa new-model
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    ip domain name example.netacad.com
+    !
+    !
+    !
+    login on-success log
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    subscriber templating
+    !
+    !
+    !
+    !
+    !
+    multilink bundle-name authenticated
+    !
+    !
+    !
+    !
+    !
+    crypto pki trustpoint TP-self-signed-3034951089
+     enrollment selfsigned
+     subject-name cn=IOS-Self-Signed-Certificate-3034951089
+     revocation-check none
+     rsakeypair TP-self-signed-3034951089
+    !
+    !
+    crypto pki certificate chain TP-self-signed-3034951089
+     certificate self-signed 01
+      30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+      31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274
+      69666963 6174652D 33303334 39353130 3839301E 170D3231 30353135 31363430
+      31335A17 0D333030 31303130 30303030 305A3031 312F302D 06035504 03132649
+      4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 30333439
+      35313038 39308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201
+      0A028201 0100A1A5 70EF718B 7D84FE32 E9522EBE 8E0021C4 5AE3E20D DC67E019
+      7E333373 D83B78D4 282855DB 4B98F62D 9B8CCDE3 2FE75F8F D2845341 238B6816
+      5EA6E661 00EDA39E 29A1D659 C246C911 AF1F6D6F B1C8DBEA B465D02F 828E0C97
+      15307A33 DAB1B355 2522C062 1C39F700 1B172439 21DC9058 2FB65F40 25657057
+      4CCB17A8 C38D734B 4B4C7337 7283E126 533A5E50 A2395C42 D20EC022 8F81FAA5
+      32ECF185 4AC9AA65 493DE981 5D3356E1 13BED660 D2AE6E8F F0B2B841 79324707
+      BC24F2DA 384DE8F8 CAC1B52B CE7A988B 799D24D7 136E9761 6A9A93B8 681134EB
+      AA4403F7 8996C01C 4258BDB4 0EE3E8A3 B47B0594 A8ACCCE2 158BFDC6 5C6F131E
+      F6BC0C18 49E50203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF
+      301F0603 551D2304 18301680 14BA0064 5C7A2DC6 3A2D8E3D 44B41E6B 913C95E7
+      AF301D06 03551D0E 04160414 BA00645C 7A2DC63A 2D8E3D44 B41E6B91 3C95E7AF
+      300D0609 2A864886 F70D0101 05050003 82010100 4DCEF14A 4156FF69 599C07D1
+      E7AFB4B8 8EAC9771 375D74EA 054CCC7E F9850C9E AF85BE20 DA2B9B27 A60FB04E
+      CF34FD15 0848FE66 691677CE C565D354 1C3AD607 C0CC6E99 F2609C20 6BAD7E95
+      56FD729F 0FC88ED5 82ED201E 08F2E0C7 422B9572 D8B2124C FAF385DD 93683123
+      9CE23EF7 5A2B89F9 6CB9EADB 4F44123F F6B7F0B9 81E7A1A5 1CC534F3 746CCCDB
+      346FD686 7349DC81 E7FAA718 39F46A87 9BAC4C43 5B4FD72C D8A81DE4 68BD52FE
+      74B10C64 49E961E8 1D2F3107 A873E9FF 80B07FDE 6C9D3312 41C8534D F6174E78
+      4E259561 2DF165B4 12B2092A 6B013F4D 40F7D4D4 34AADB2B 7769421C E5B81750
+      1D5BBDC8 A418F4D5 90A47134 A83A9FBD CA7282CA
+            quit
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    license udi pid CSR1000V sn 93JR7SP44N1
+    no license smart enable
+    diagnostic bootup level minimal
+    !
+    spanning-tree extend system-id
+    !
+    netconf-yang
+    !
+    restconf
+    !
+    username cisco privilege 15 password 0 cisco123!
+    !
+    redundancy
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    !
+    interface GigabitEthernet1
+     description VBox
+     ip address dhcp
+     negotiation auto
+     no mop enabled
+     no mop sysid
+    !
+    ip forward-protocol nd
+    no ip http server
+    ip http authentication local
+    ip http secure-server
+    !
+    !
+    !
+    !
+    !
+    !
+    control-plane
+    !
+    !
+    !
+    !
+    !
+    banner motd ^C
+    *                                           *
+    **                                         **
+    ***                                       ***
+    ***  Cisco Networking Academy             ***
+    ***                                       ***
+    ***  This software is provided for        ***
+    ***   Educational Purposes                ***
+    ***    Only in Networking Academies       ***
+    ***                                       ***
+    **                                         **
+    *                                           *
+    ^C
+    !
+    line con 0
+     logging synchronous
+     stopbits 1
+    line vty 0 4
+     login local
+     transport input ssh
+    line vty 5 15
+     login local
+     transport input ssh
+    !
+    !
+    !
+    !
+    !
+    !
+    end
+- |-
+    Global values:
+      Internet Protocol routing is enabled
+    GigabitEthernet1 is up, line protocol is up
+      Internet address is 192.168.137.132/24
+- |-
+    Interface              IP-Address      OK? Method Status                Protocol
+    GigabitEthernet1       192.168.137.132 YES DHCP   up                    up
