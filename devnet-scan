@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read -p "Please enter your first name: "name
+echo "Hello $name, Welcome to Docker!"
+echo ""
