@@ -1,0 +1,39 @@
+Today is: Wednesday 04 May
+NAME="Ubuntu"
+VERSION="20.04.4 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.4 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+5.13.0-35-generic
+
+ubuntu
+/home/cisco/devnetsba
+cisco
+
+Required Programs
+git version 2.25.1
+
+Docker version 20.10.14, build a224086
+
+ansible [core 2.12.4]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/cisco/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/cisco/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+
+VS Code
+1.66.2
+dfd34e8260c270da74b5c2d86d61aee4b6d56977
+x64
+Wed 04 May 2022 10:49:39 AM CDT
