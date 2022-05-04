@@ -1,4 +1,4 @@
-date > stats.txt
+date +"Today is: %A %d %B" > stats.txt
 cat /etc/os-release >> stats.txt
 uname -r >> stats.txt
 echo "" >> stats.txt
@@ -16,3 +16,4 @@ echo "" >> stats.txt
 echo "VS Code" >> stats.txt
 code --version >> stats.txt
 code --list-extensions >> stats.txt
+date +%c >> stats.txt
