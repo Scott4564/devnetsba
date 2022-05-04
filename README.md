@@ -20,12 +20,13 @@
   4.	Install these packages in the VM:
      •	Python3
      •	Pip3
-     •	Go
+     •	Go (for CISSHGO only)
      •	Git
      •	Postman
      •	Docker
-     •	Ansible and ansible.netcommon plugin
+     •	Ansible with ansible.netcommon and cisco_ios plugins
      •	VS Code (optional)
+     •	netmiko
      
   5.	Clone the devnetsba repository to the /home/cisco directory.
      https://github.com/Scott4564/devnetsba.git
