@@ -1,0 +1,45 @@
+- "Building configuration...\n\n\nCurrent configuration : 3724 bytes\n!\n! Last configuration
+  change at 20:14:55 UTC Tue Nov 14 2023 by admin\n!\nversion 16.9\nservice timestamps
+  debug datetime msec\nservice timestamps log datetime msec\nplatform qfp utilization
+  monitor load 80\nno platform punt-keepalive disable-kernel-core\nplatform hardware
+  throughput level 75000\n!\nhostname R1\n!\nboot-start-marker\nboot-end-marker\n!\n!\nenable
+  secret 5 $1$b6OL$PnoF6VxdYoGECyFdBAceX.\n!\nno aaa new-model\n!\nip domain name
+  netauto.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!
+  \n! \n! \n! \n!\nmultilink bundle-name authenticated\n!\n!\n!\ncrypto pki trustpoint
+  TP-self-signed-3973627160\n enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3973627160\n
+  revocation-check none\n rsakeypair TP-self-signed-3973627160\n!\n!\ncrypto pki certificate
+  chain TP-self-signed-3973627160\n certificate self-signed 01\n  30820330 30820218
+  A0030201 02020101 300D0609 2A864886 F70D0101 05050030 \n  31312F30 2D060355 04031326
+  494F532D 53656C66 2D536967 6E65642D 43657274 \n  69666963 6174652D 33393733 36323731
+  3630301E 170D3233 31313036 32303433 \n  35345A17 0D333030 31303130 30303030 305A3031
+  312F302D 06035504 03132649 \n  4F532D53 656C662D 5369676E 65642D43 65727469 66696361
+  74652D33 39373336 \n  32373136 30308201 22300D06 092A8648 86F70D01 01010500 0382010F
+  00308201 \n  0A028201 0100C602 1F400CFF 63B6D75C AFDB0A10 BA4B4DA7 0023765E C05D93F5
+  \n  BBEDF4C5 D8110A8A 8E4859E3 CEC32E66 3D73A316 347FDFE8 9007D241 C1BD03D9 \n  39D0A610
+  98C6ECD3 786F8E4B 93CC5194 CEF1F99A 4F0E8E35 BF777AA2 B83AAF7D \n  07CFA34D DB2B0AAB
+  4E1DAC6D 6486BD28 A11FCCE4 F1B9C5BB C8D7A565 A67D4463 \n  B4E5DEF7 48EECB05 8BB9AECB
+  7814B190 002CF5D8 66C5F77C 486F9B0C F1CC4CCF \n  89F572F4 0B4006FC FA9FAD26 3B466C4B
+  81AE5DB3 08516620 A79CAFBE F1C133AC \n  A809ACB1 D237F421 859D9FBA FE020339 690B634B
+  D1599D84 F45CC3B8 0A4A2694 \n  DCCBF387 D694060F F06A4121 F0E0F9D3 9AF5CFFF B7085BD3
+  6B94F08E 62A97172 \n  C3699A3C 2ECF0203 010001A3 53305130 0F060355 1D130101 FF040530
+  030101FF \n  301F0603 551D2304 18301680 1480A952 EE2DC841 835A9A9A B8852107 11B5FAFC
+  \n  25301D06 03551D0E 04160414 80A952EE 2DC84183 5A9A9AB8 85210711 B5FAFC25 \n  300D0609
+  2A864886 F70D0101 05050003 82010100 B65E45B7 4CB80309 8975DE97 \n  F7149C0C 3DF320D6
+  F139EF3C 4EAB52F5 D4388119 8EB5136C FCD9B935 AF5B9414 \n  2A8B1AAA 7790117A 2349210A
+  E22F8444 D49ED699 6865087F D8FF6248 C7C1D607 \n  98C29F5C ADC3FB5F 1C4ADDE0 B314BB53
+  46299722 E5B86766 2B26A725 658504AE \n  4E426E67 13126215 BFFDB28D 88F4BA89 575BF466
+  029039BD 0511F802 572CD95C \n  0233A73C 4686E0BD DA7C6619 4AAD3A0B 86F4509D D4F9ECF9
+  D6873A36 D64E0036 \n  B93C3EE5 04012A44 A470FBFC 2A2444DC D1B3F1BC 9F7905F6 A145503C
+  F0A92517 \n  7ADBA0DB B1C7EF3C 8A8D02E9 C4BB2F14 DF95A7DD 5541C837 B20A5BBB 8DECA315
+  \n  DF3B6C36 50886C9B C6270B87 65247635 CA63BA38\n  \tquit\n!\nlicense udi pid ISR4221/K9
+  sn FGL223990FE\nlicense accept end user agreement\nlicense boot level securityk9\nno
+  license smart enable\ndiagnostic bootup level minimal\n!\nspanning-tree extend system-id\n!\n!\n!\nusername
+  admin password 0 cisco\n!\nredundancy\n mode none\n!\n!\n!\n!\n!\n!\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!
+  \n! \n!\n!\ninterface Loopback0\n description Configured by Ansible\n ip address
+  10.0.0.1 255.255.255.255\n!\ninterface GigabitEthernet0/0/0\n ip address 192.168.1.1
+  255.255.255.0\n negotiation auto\n!\ninterface GigabitEthernet0/0/1\n no ip address\n
+  shutdown\n negotiation auto\n!\ninterface Serial0/1/0\n no ip address\n shutdown\n!\ninterface
+  Serial0/1/1\n no ip address\n shutdown\n!\nip forward-protocol nd\nip http server\nip
+  http authentication local\nip http secure-server\n!\nip ssh version 2\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline
+  con 0\n login local\n transport input none\n stopbits 1\nline aux 0\n stopbits 1\nline
+  vty 0\n login local\n transport input ssh\nline vty 1 4\n login\n!\n!\n!\n!\n!\n!\nend"

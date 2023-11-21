@@ -1,0 +1,17 @@
+- "Building configuration...\n\n\nCurrent configuration : 1349 bytes\n!\n! Last configuration
+  change at 20:36:29 UTC Tue Nov 14 2023 by admin\n!\nversion 16.4\nservice timestamps
+  debug datetime msec\nservice timestamps log datetime msec\nno platform punt-keepalive
+  disable-kernel-core\nplatform hardware throughput level 75000\n!\nhostname R2\n!\nboot-start-marker\nboot-end-marker\n!\n!\nenable
+  secret 5 $1$djlR$hYsqrOtz8C8bWSNLBYYT..\n!\nno aaa new-model\n!\n!\n!\n\nip domain
+  name netauto.com\n!\nip dhcp pool webuidhcp\n!\n!\n!\nipv6 unicast-routing\n!\n!\n!\n!\n!\n!\n!\nsubscriber
+  templating\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\nlicense
+  udi pid ISR4221/K9 sn FGL223990FL\n!\ndiagnostic bootup level minimal\nspanning-tree
+  extend system-id\n!\n!\nusername admin password 0 cisco\n!\nredundancy\n mode none\n!\n!\n!\n!\n!\n!\n!
+  \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n! \n! \n! \n! \n! \n! \n!\n!\ninterface Loopback0\n
+  description Configured by Ansible\n ip address 10.0.0.2 255.255.255.255\n!\ninterface
+  GigabitEthernet0/0/0\n ip address 192.168.1.2 255.255.255.0\n negotiation auto\n!\ninterface
+  GigabitEthernet0/0/1\n no ip address\n negotiation auto\n!\ninterface Serial0/1/0\n
+  no ip address\n!\ninterface Serial0/1/1\n no ip address\n!\nip forward-protocol
+  nd\nno ip http server\nip http secure-server\n!\nip ssh version 2\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline
+  con 0\n login local\n transport input none\n stopbits 1\nline vty 0\n login local\n
+  transport input ssh\nline vty 1 4\n login\n!\n!\n!\n!\n!\n!\nend"

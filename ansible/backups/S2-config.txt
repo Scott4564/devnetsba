@@ -1,0 +1,29 @@
+- '*03:07:50.522 UTC Mon Mar 1 1993'
+- "Default domain is netauto.com\nName/address lookup uses domain service\nName servers
+  are 255.255.255.255\n\nCodes: u - unknown, e - expired, * - OK, ? - revalidate\n
+  \      t - temporary, p - permanent\n\nHost                      Port  Flags      Age
+  Type   Address(es)"
+- 'Fa0/1                        connected    1          a-full  a-100 10/100BaseTX
+
+  Gi0/1                        connected    1          a-full a-1000 10/100/1000BaseTX'
+- "VLAN Name                             Status    Ports\n---- --------------------------------
+  --------- -------------------------------\n1    default                          active
+  \   Fa0/1, Fa0/2, Fa0/3, Fa0/4, Fa0/5, Fa0/6, Fa0/7, Fa0/8, Fa0/9, Fa0/10, Fa0/11,
+  Fa0/12, Fa0/13, Fa0/14, Fa0/15, Fa0/16, Fa0/17, Fa0/18, Fa0/19, Fa0/20, Fa0/21,
+  Fa0/22, Fa0/23, Fa0/24, Gi0/1, Gi0/2\n10   Management                       active
+  \   \n20   Sales                            active    \n1002 fddi-default                     act/unsup
+  \n1003 token-ring-default               act/unsup \n1004 fddinet-default                  act/unsup
+  \n1005 trnet-default                    act/unsup"
+- "VLAN0001\n  Spanning tree enabled protocol ieee\n  Root ID    Priority    32769\n
+  \            Address     04c5.a455.9e80\n             This bridge is the root\n
+  \            Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec\n\n  Bridge
+  ID  Priority    32769  (priority 32768 sys-id-ext 1)\n             Address     04c5.a455.9e80\n
+  \            Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec\n             Aging
+  Time  300 sec\n\nInterface           Role Sts Cost      Prio.Nbr Type\n-------------------
+  ---- --- --------- -------- --------------------------------\nFa0/1               Desg
+  FWD 19        128.1    P2p \nGi0/1               Desg FWD 4         128.25   P2p"
+- "Mac Address Table\n-------------------------------------------\n\nVlan    Mac Address
+  \      Type        Ports\n----    -----------       --------    -----\n   1    0800.272c.a9d2
+  \   DYNAMIC     Gi0/1\n   1    18ef.638a.d199    DYNAMIC     Gi0/1\n   1    509a.4c33.098c
+  \   DYNAMIC     Gi0/1\n   1    f80f.6f4d.79d0    DYNAMIC     Fa0/1\nTotal Mac Addresses
+  for this criterion: 4"
