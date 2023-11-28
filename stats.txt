@@ -1,4 +1,4 @@
-Today is: Tuesday 21 November
+Today is: Tuesday 28 November
 PRETTY_NAME="Ubuntu 22.04.3 LTS"
 NAME="Ubuntu"
 VERSION_ID="22.04"
@@ -28,7 +28,7 @@ ansible [core 2.15.6]
   ansible python module location = /usr/lib/python3/dist-packages/ansible
   ansible collection location = /home/cisco/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/bin/ansible
-  python version = 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] (/usr/bin/python3)
+  python version = 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0] (/usr/bin/python3)
   jinja version = 3.0.3
   libyaml = True
 
@@ -36,4 +36,4 @@ VS Code
 1.84.2
 1a5daa3a0231a0fbba4f14db7ec463cf99d7768e
 x64
-Tue 21 Nov 2023 04:25:19 PM EST
+Tue 28 Nov 2023 04:07:09 PM EST

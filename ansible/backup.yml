@@ -1,17 +1,19 @@
 ---
-- name: "Backup Routers"
+- name: "Show Me the Money"
   hosts: routers
   gather_facts: no
   connection: network_cli
 
   tasks:
-     - name: Get Running-config
+     - name: Show Configuration Data
        ios_command:
          commands:
          - show running-config
+         - show ip interface brief
+         - show version
        register: config
 
-     - name: Save router outputs to backups folder
+     - name: Save the Output
        copy:
            content: "{{ config.stdout| to_nice_yaml(indent=2, width=80) }}"
            dest: "backups/{{ inventory_hostname }}-config.txt"
