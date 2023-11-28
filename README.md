@@ -2,7 +2,7 @@
  
 # You will clone this blank repository and build your applications in it. You will receive instructions your exam time.
 
-# Prep work before the exam:
+# Prep work you should have completed before the exam:
 # Equipment
   -	A Linux (Ubuntu preferred) physical or virtual machine (Do NOT use the DEVASC-VM)
   -	Installed software (see below)
