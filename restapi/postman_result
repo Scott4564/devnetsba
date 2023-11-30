@@ -1,0 +1,9 @@
+<rssInfo>Message: This page was not found. If you feel that you've came to an error, please contact us at: Please contact us at mars.nasa.gov/feedback (404)</rssInfo>
+
+
+I used this 
+
+https://api.nasa.gov/insight_weather/?API_KEY=BhejXe6Vpf4ZQqoAPpywA7Abb76a94CeFTtji3G3
+
+
+i got code 200, but in the document, it says 404
