@@ -1,0 +1,249 @@
+- |-
+  Building configuration...
+
+  Current configuration : 3915 bytes
+  !
+  ! Last configuration change at 17:08:51 UTC Fri Dec 1 2023
+  !
+  version 16.9
+  service timestamps debug datetime msec
+  service timestamps log datetime msec
+  platform qfp utilization monitor load 80
+  no platform punt-keepalive disable-kernel-core
+  platform console virtual
+  !
+  hostname CSR1kv
+  !
+  boot-start-marker
+  boot-end-marker
+  !
+  !
+  !
+  no aaa new-model
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  ip domain name example.netacad.com
+  !
+  !
+  !
+  login on-success log
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  subscriber templating
+  !
+  !
+  !
+  !
+  !
+  multilink bundle-name authenticated
+  !
+  !
+  !
+  !
+  !
+  crypto pki trustpoint TP-self-signed-475691080
+   enrollment selfsigned
+   subject-name cn=IOS-Self-Signed-Certificate-475691080
+   revocation-check none
+   rsakeypair TP-self-signed-475691080
+  !
+  !
+  crypto pki certificate chain TP-self-signed-475691080
+   certificate self-signed 01
+    3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030
+    30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274
+    69666963 6174652D 34373536 39313038 30301E17 0D323331 32303131 37303930
+    365A170D 33303031 30313030 30303030 5A303031 2E302C06 03550403 1325494F
+    532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3437 35363931
+    30383030 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02
+    82010100 BECCE310 04AE4B66 833FF06B CCB7CEA0 77266B57 4CE4D824 51706C4B
+    BEF5B491 1EB523FA 2B2CF7A8 27D98EF0 7A3A5747 AA09B10D 6F4FBD9A DF5D239C
+    BF5C416E D49BC6EE C7AB1F4C 61EDFC0A 7C974BB7 628835C9 21AD232A 181640D5
+    FF45E140 742B17DB 9E2819D8 CBC3333E 5CBB97D3 27C0D705 AEF89AF6 6EAD2F93
+    896876B9 B3B3D797 8332AC16 54DA8542 8E19E2CD 24079602 C7C841BB 5B068540
+    2330B89F 3E3092CF 4AA8C553 1D7C51D0 2C98E508 5243BA75 C8F433C2 2AE3ABAF
+    F38971A8 BE2F8FD7 0445E0FD FFE78BF7 5B3499AE 260C715A 5290A893 CF5D5342
+    4C97ADE8 7C4A6C2D 3349D329 FBB33A59 11F84F62 B7B1DA43 19A84B45 601B041E
+    F8D1196B 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F
+    0603551D 23041830 1680143E A9EDA654 4239159B 025D442E BC43359B 61EA4C30
+    1D060355 1D0E0416 04143EA9 EDA65442 39159B02 5D442EBC 43359B61 EA4C300D
+    06092A86 4886F70D 01010505 00038201 010048C8 325A631A FFD956B4 45A0C16A
+    FE6CEE06 BC78B4A3 BCB9CC81 31B6325E 3ADF493A 6483C09A D46A448C 88A99CB6
+    0F75293E 5E6E90E5 38EF5FA6 D7738918 203ED452 ABDEA1CD C474CFD1 E7FEAA2E
+    4B04A138 ABB581CA B8E13279 E40AE9D1 20191B42 EEA1E21D 0E96622E E1DB7DCD
+    8212A7B8 D21A1A0F B8AADB0C AE4EFD13 0EFA1184 4E93A011 D4154102 5CD028CF
+    EF2C20F5 A66F39E0 3773ACBA 318F7E5F B506E821 CFD1A42F BA50FF2D 4BFEA836
+    4633D224 AABDC390 40CBD7C0 93A07C3A AC94B41A 5DA96A4C 44EDB579 D3E3F157
+    D1785B52 93C3EA5A 10D6CFCD C8011E25 F4527E1E 4438CDC2 5270DDAB 991FDC75
+    F5A8B53B 8FB8FDCC 427674CD 23861C2F 264E
+          quit
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  license udi pid CSR1000V sn 9WY3WMQ77UE
+  no license smart enable
+  diagnostic bootup level minimal
+  !
+  spanning-tree extend system-id
+  !
+  netconf-yang
+  !
+  restconf
+  !
+  username cisco privilege 15 password 0 cisco123!
+  !
+  redundancy
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  !
+  interface GigabitEthernet1
+   description VBox
+   ip address dhcp
+   negotiation auto
+   no mop enabled
+   no mop sysid
+  !
+  ip forward-protocol nd
+  no ip http server
+  ip http authentication local
+  ip http secure-server
+  !
+  !
+  !
+  !
+  !
+  !
+  control-plane
+  !
+  !
+  !
+  !
+  !
+  banner motd ^C
+  *                                           *
+  **                                         **
+  ***                                       ***
+  ***  Cisco Networking Academy             ***
+  ***                                       ***
+  ***  This software is provided for        ***
+  ***   Educational Purposes                ***
+  ***    Only in Networking Academies       ***
+  ***                                       ***
+  **                                         **
+  *                                           *
+  ^C
+  !
+  line con 0
+   logging synchronous
+   stopbits 1
+  line vty 0 4
+   login local
+   transport input ssh
+  line vty 5 15
+   login local
+   transport input ssh
+  !
+  !
+  !
+  !
+  !
+  !
+  end
+- |-
+  Interface              IP-Address      OK? Method Status                Protocol
+  GigabitEthernet1       192.168.126.128 YES DHCP   up                    up
+- |-
+  Cisco IOS XE Software, Version 16.09.05
+  Cisco IOS Software [Fuji], Virtual XE Software (X86_64_LINUX_IOSD-UNIVERSALK9-M), Version 16.9.5, RELEASE SOFTWARE (fc1)
+  Technical Support: http://www.cisco.com/techsupport
+  Copyright (c) 1986-2020 by Cisco Systems, Inc.
+  Compiled Thu 30-Jan-20 18:48 by mcpre
+
+
+  Cisco IOS-XE software, Copyright (c) 2005-2020 by cisco Systems, Inc.
+  All rights reserved.  Certain components of Cisco IOS-XE software are
+  licensed under the GNU General Public License ("GPL") Version 2.0.  The
+  software code licensed under GPL Version 2.0 is free software that comes
+  with ABSOLUTELY NO WARRANTY.  You can redistribute and/or modify such
+  GPL code under the terms of GPL Version 2.0.  For more details, see the
+  documentation or "License Notice" file accompanying the IOS-XE software,
+  or the applicable URL provided on the flyer accompanying the IOS-XE
+  software.
+
+
+  ROM: IOS-XE ROMMON
+
+  CSR1kv uptime is 4 hours, 3 minutes
+  Uptime for this control processor is 4 hours, 5 minutes
+  System returned to ROM by reload
+  System image file is "bootflash:packages.conf"
+  Last reload reason: reload
+
+
+
+  This product contains cryptographic features and is subject to United
+  States and local country laws governing import, export, transfer and
+  use. Delivery of Cisco cryptographic products does not imply
+  third-party authority to import, export, distribute or use encryption.
+  Importers, exporters, distributors and users are responsible for
+  compliance with U.S. and local country laws. By using this product you
+  agree to comply with applicable laws and regulations. If you are unable
+  to comply with U.S. and local laws, return this product immediately.
+
+  A summary of U.S. laws governing Cisco cryptographic products may be found at:
+  http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+  If you require further assistance please contact us by sending email to
+  export@cisco.com.
+
+  License Level: ax
+  License Type: Default. No valid license found.
+  Next reload license Level: ax
+
+
+  Smart Licensing Status: Smart Licensing is DISABLED
+
+  cisco CSR1000V (VXE) processor (revision VXE) with 2392172K/3075K bytes of memory.
+  Processor board ID 9WY3WMQ77UE
+  1 Gigabit Ethernet interface
+  32768K bytes of non-volatile configuration memory.
+  8113348K bytes of physical memory.
+  7774207K bytes of virtual hard disk at bootflash:.
+  0K bytes of WebUI ODM Files at webui:.
+
+  Configuration register is 0x2102

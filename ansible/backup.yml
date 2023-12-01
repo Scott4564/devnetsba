@@ -1,0 +1,20 @@
+---
+- name: Show Me the Money
+  hosts: Routers
+  gather_facts: no
+  connection: network_cli
+
+  tasks:
+   - name: SHOW CONFIGURATION DATA
+     ios_command:
+      commands:
+        - show running-config
+        - show ip interface brief
+        - show version
+     register: config
+    
+   - name: SAVE OUTPUT TO ./backups/
+     copy:
+      content: "{{ config.stdout | to_nice_yaml(indent=2, width=80)}}"
+      dest: "backups/{{ inventory_hostname }}-config.txt"
+...

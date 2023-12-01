@@ -1,0 +1,30 @@
+Today is: Friday 01 December
+PRETTY_NAME="Ubuntu 22.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.3 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+6.2.0-37-generic
+
+final
+/home/cisco/my-git/devnetsba
+cisco
+
+Required Programs
+git version 2.34.1
+
+Docker version 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+
+
+VS Code
+1.84.2
+1a5daa3a0231a0fbba4f14db7ec463cf99d7768e
+x64
+Fri 01 Dec 2023 02:10:05 PM EST

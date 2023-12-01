@@ -1,0 +1,21 @@
+#Hosts
+
+[cisco:children]
+  Routers
+
+[Routers]
+
+CSR1kv ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.126.128 ansible_network_os=cisco.ios.ios
+CSR2kv ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.126.129 ansible_network_os=cisco.ios.ios
+
+
+[cisco:vars]
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=cisco.ios.ios
+ansible_user=cisco
+ansible_password=cisco123!
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_password=cisco123!
+
+ansible_ssh_common_arg=-o KexAlgorithms +diffie-hellman-group-exchange-sha1, diffie-hellman-group14-sha1
